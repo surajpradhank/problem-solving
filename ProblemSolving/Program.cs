@@ -3,11 +3,11 @@ using ProblemSolving.ArrayDS;
 using ProblemSolving.Concepts;
 
 Console.WriteLine("Hello, World!");
-Console.WriteLine(E_ProductOfArrExceptSelf.ProductOfArray());
-Console.WriteLine(E_ContainsDuplicate.ContainsDuplicate());
+//.WriteLine(E_ProductOfArrExceptSelf.ProductOfArray());
+//Console.WriteLine(E_ContainsDuplicate.ContainsDuplicate());
 
 #region Buy and Sell stock for maximum profit
-Console.WriteLine("Maximum profit = ", E_BuyAndSellStock.maxProfit());
+Console.WriteLine("Maximum profit = {0}", E_BuyAndSellStock.maxProfit());
 #endregion
 
 #region Two Sum
@@ -42,9 +42,14 @@ Console.WriteLine("Maximum profit = ", E_BuyAndSellStock.maxProfit());
 //Console.WriteLine("Sorted Square Array: " + string.Join(",", resultOption2));
 #endregion
 
+#region Maximum Subarray
+Console.WriteLine("Maximum Sub array sum = {0} ", E_MaximumSubarray.MaximumSubarray());
+
+#endregion
+
 #region Sliding window concepts
 
-Console.WriteLine("Maximum Sub array = ", SlidingWindow.MaximumSumSubArray());
+//Console.WriteLine("Maximum Sub array = ", SlidingWindow.MaximumSumSubArray());
 #endregion
 
 
