@@ -1,13 +1,31 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using ProblemSolving.Algorithm.Sorting;
 using ProblemSolving.ArrayDS;
-using ProblemSolving.Concepts;
+using ProblemSolving.Concepts.Topics;
+using ProblemSolving.Recursion;
 
 Console.WriteLine("Hello, World!");
-//.WriteLine(E_ProductOfArrExceptSelf.ProductOfArray());
+
+#region Recursion
+
+//Console.WriteLine(Recursion.SumOfNaturalNo(5));
+
+//Console.WriteLine(Recursion.ReverseString("hello"));
+
+//Console.WriteLine(Recursion.DecimalToBinary(233, ""));
+
+//Console.WriteLine(Recursion.IsPalindrome("kayak"));
+#endregion
+
+//Console.WriteLine(string.Join(",", E_ProductOfArrExceptSelf.ProductOfArrayExceptSelfBruteForce()));
 //Console.WriteLine(E_ContainsDuplicate.ContainsDuplicate());
 
+#region Maximum Product of Sub Array
+//Console.WriteLine("Maximum Product of Sub Array = {0}",M_MaximumProductSubArray.MaxProductSubArray());
+#endregion
+
 #region Buy and Sell stock for maximum profit
-Console.WriteLine("Maximum profit = {0}", E_BuyAndSellStock.maxProfit());
+//Console.WriteLine("Maximum profit = {0}", E_BuyAndSellStock.maxProfit());
 #endregion
 
 #region Two Sum
@@ -43,8 +61,7 @@ Console.WriteLine("Maximum profit = {0}", E_BuyAndSellStock.maxProfit());
 #endregion
 
 #region Maximum Subarray
-Console.WriteLine("Maximum Sub array sum = {0} ", E_MaximumSubarray.MaximumSubarray());
-
+//Console.WriteLine("Maximum Sub array sum = {0} ", E_MaximumSubarray.MaximumSubArrayTwoLoop());
 #endregion
 
 #region Sliding window concepts
@@ -79,6 +96,34 @@ Console.WriteLine("Maximum Sub array sum = {0} ", E_MaximumSubarray.MaximumSubar
 //     Console.WriteLine("Element found at index " + resultIterative);
 
 #endregion
+
+#region Sort
+//Console.WriteLine("Bubble Sort = {0}",BubbleSort.BubbleSortMain());
+//Console.WriteLine("Selection Sort = {0}", SelectionSort.SelectionSortMain());
+//Console.WriteLine("Insertion Sort = {0}", InsertionSort.InsertionSortMain());
+MergeSort.MergeSortCall();
+#endregion
 #endregion
 
+
+#region Concepts
+
+#region Binary Tree Height
+
+//Node root = new Node(1);
+//root.left = new Node(2);
+//root.right = new Node(3);
+//root.left.left = new Node(4);
+//root.left.right = new Node(5);
+
+//Console.WriteLine(Height_BinaryTree.Height(root));
+
+#endregion
+
+#endregion
+
+
+#region Dynamic Programming
+//H_SubSequence.SubSequenceMain();
+#endregion
 Console.WriteLine("Thank you");

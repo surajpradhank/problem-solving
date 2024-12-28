@@ -19,9 +19,9 @@ public class BinarySearch
                 return mid;
 
             if (value < input[mid])
-                return BinarySearchHelperRecursive(input, value, low, mid - 1);
+                return BinarySearchHelperRecursive(input, value, low, high: mid - 1);
 
-            return BinarySearchHelperRecursive(input, value, mid + 1, high);
+            return BinarySearchHelperRecursive(input, value, low: mid + 1, high);
         }
 
         return -1;
@@ -39,7 +39,7 @@ public class BinarySearch
     /// <param name="value">Item to search for.</param>
     /// <returns>Index of item that equals to item searched for or -1 if none found.</returns>
 
-    public int binarySearchHelperIterative(int[] input, int value)
+    public int BinarySearchHelperIterative(int[] input, int value)
     {
         int low = 0, mid = 0;
         int high = input.Length - 1;

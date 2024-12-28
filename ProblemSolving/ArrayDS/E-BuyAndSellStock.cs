@@ -13,16 +13,16 @@ internal static class E_BuyAndSellStock
 
     /// <summary>
     /// Time Complexity - O(n) SpaceComplexity - O(1)
-    /// </summary>
+    /// </summary>  
     public static int maxProfit()
     {
         int[] prices = [7, 1, 5, 3, 6, 4];
         int l = 0; // left = buy
-        int r = 1; //right = sell
+        //int r = 1; //right = sell
 
         int maxProfit = 0;
 
-        while (r < prices.Length)
+        for (int r = 1; r < prices.Length; r++)
         {
             if (prices[l] < prices[r])
             {
@@ -31,8 +31,6 @@ internal static class E_BuyAndSellStock
             }
             else
                 l = r;
-            r = r + 1;
-
         }
         return maxProfit;
     }
