@@ -1,2 +1,14 @@
 E - Easy Leetcode
 M - Medium Leetcode
+
+Recursion
+Recursion works by breaking the problem into smaller, manageable pieces.
+Each recursive call adds to the call stack, and values are returned when the base case is reached.
+Ensure a well-defined base case to prevent infinite recursion.
+
+
+Tree
+
+Hirarchical data structure
+
+Binary tree - at max 2 children

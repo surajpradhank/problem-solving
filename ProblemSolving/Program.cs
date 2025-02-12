@@ -1,8 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ProblemSolving.Algorithm.Sorting;
 using ProblemSolving.ArrayDS;
+using ProblemSolving.Concepts.Graph;
 using ProblemSolving.Concepts.Topics;
-using ProblemSolving.Recursion;
+using ProblemSolving.Concepts.Recursion;
+using ProblemSolving.Concepts.Topics.BinaryTree;
+using ProblemSolving.Concepts;
 
 Console.WriteLine("Hello, World!");
 
@@ -19,6 +22,13 @@ Console.WriteLine("Hello, World!");
 
 //Console.WriteLine(string.Join(",", E_ProductOfArrExceptSelf.ProductOfArrayExceptSelfBruteForce()));
 //Console.WriteLine(E_ContainsDuplicate.ContainsDuplicate());
+
+#region Remove Duplicates
+//int[] nums = { 1, 1, 2,2 , 3, 4,4, 5, 6, 6, 7, 8, 8, 9 };
+int[] nums = { 5, 3, 8, 3, 1, 5, 7, 8, 2 };
+var result = RemoveDuplicates.RemoveDuplicatesFromArray(nums);
+Console.WriteLine(string.Join(",", result));
+#endregion
 
 #region Maximum Product of Sub Array
 //Console.WriteLine("Maximum Product of Sub Array = {0}",M_MaximumProductSubArray.MaxProductSubArray());
@@ -64,6 +74,10 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine("Maximum Sub array sum = {0} ", E_MaximumSubarray.MaximumSubArrayTwoLoop());
 #endregion
 
+#region Search in Sorted Array
+//M_SearchInSortedArray.SearchInSortedArrayCall();
+#endregion
+
 #region Sliding window concepts
 
 //Console.WriteLine("Maximum Sub array = ", SlidingWindow.MaximumSumSubArray());
@@ -101,12 +115,15 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine("Bubble Sort = {0}",BubbleSort.BubbleSortMain());
 //Console.WriteLine("Selection Sort = {0}", SelectionSort.SelectionSortMain());
 //Console.WriteLine("Insertion Sort = {0}", InsertionSort.InsertionSortMain());
-MergeSort.MergeSortCall();
+//MergeSort.MergeSortCall();
 #endregion
 #endregion
 
 
 #region Concepts
+#region Binary Tree
+//BinaryTree.CallBinaryTree();
+#endregion
 
 #region Binary Tree Height
 
@@ -120,10 +137,15 @@ MergeSort.MergeSortCall();
 
 #endregion
 
+#region Graph
+//Classroom.CallClassroom();
+#endregion
+
 #endregion
 
 
 #region Dynamic Programming
 //H_SubSequence.SubSequenceMain();
 #endregion
+
 Console.WriteLine("Thank you");

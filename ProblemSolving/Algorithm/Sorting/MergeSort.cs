@@ -16,6 +16,8 @@ internal class MergeSort
 
         MergeSortArray(arr, 0, arr.Length - 1);
 
+        string.Join(",",arr);
+
         foreach (var item in arr)
         {
             Console.WriteLine(item);
