@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <None Remove="String\E-LongestCommonPrefix.cs~RFc1863c.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TreeDS\" />
   </ItemGroup>
 
 </Project>

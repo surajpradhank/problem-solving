@@ -4,8 +4,9 @@ using ProblemSolving.ArrayDS;
 using ProblemSolving.Concepts.Graph;
 using ProblemSolving.Concepts.Topics;
 using ProblemSolving.Concepts.Recursion;
-using ProblemSolving.Concepts.Topics.BinaryTree;
 using ProblemSolving.Concepts;
+using ProblemSolving.Concepts.LinkedList;
+using ProblemSolving.String;
 
 Console.WriteLine("Hello, World!");
 
@@ -62,7 +63,7 @@ Console.WriteLine(string.Join(",", result));
 #endregion
 
 #region Sorted Square Array
-//int[] array = { -3, 1, 2, 4, 5, 6, 8, 9 };
+//int[] array =[-4,-1,0,3,10];// { -3, 1, 2, 4, 5, 6, 8, 9 };
 //var result = SquaredArray.SortedSquaredArray(array);
 //var resultOption2 = SquaredArray.SortedSquaredArrayOption2(array);
 
@@ -83,7 +84,29 @@ Console.WriteLine(string.Join(",", result));
 //Console.WriteLine("Maximum Sub array = ", SlidingWindow.MaximumSumSubArray());
 #endregion
 
+#region string Problems
 
+#region Longest int without non repeating characters
+//M_LongestintNon_RepeatingCharacter.LongestintNonRepeatingCharacterMaximumLength();
+//int output = M_LongestintNon_RepeatingCharacter.LongestintNonRepeatingCharacter();
+//Console.WriteLine("Longest int without repeating characters : " + output);
+#endregion
+
+#region String Compress
+M_CompressString m_CompressString = new M_CompressString();
+m_CompressString.CompressString();
+
+#endregion
+#region Valid Palindrome
+E_ValidPalindrome e_ValidPalindrome = new E_ValidPalindrome();
+e_ValidPalindrome.ValidPalindrome();
+#endregion
+#region Common Prefix
+E_LongestCommonPrefix e_LongestCommonPrefix = new E_LongestCommonPrefix();
+e_LongestCommonPrefix.LongestCommonPrefixString();
+Console.WriteLine("Output - "+e_LongestCommonPrefix.LongestCommonPrefixStringOption2());
+#endregion
+#endregion
 #region Algorithm
 /// <summary>
 /// Call Binary Search by uncommenting Iterative or Recursive 
@@ -141,6 +164,31 @@ Console.WriteLine(string.Join(",", result));
 //Classroom.CallClassroom();
 #endregion
 
+#region Linked List
+//LL lL = new LL();
+//lL.AddFirst(10);
+//lL.AddFirst(20);
+//lL.AddFirst(40);
+//lL.AddLast(70);
+//lL.PrintNode();
+
+//lL.GetSize();
+//lL.RemoveLast();
+//lL.RemoveFirst();
+//lL.GetSize();
+//lL.PrintNode();
+
+// Inbuild LinkedList
+
+//LinkedList<int> resultLL = new LinkedList<int>();
+//resultLL.AddFirst(10);
+//resultLL.AddFirst(20);
+//resultLL.AddLast(40);
+//Console.WriteLine(string.Join("->",resultLL));
+//resultLL.RemoveFirst();
+//resultLL.RemoveLast();
+//Console.WriteLine(resultLL.Count());
+#endregion
 #endregion
 
 
