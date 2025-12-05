@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace ProblemSolving.Concepts.LinkedList
 {
+    public class Node
+    {
+        public int data;
+        public Node next;
+
+        public Node(int _data)
+        {
+            data = _data;
+            next = null;
+        }
+    }
     public class LL
     {
-        public class Node
-        {
-            public int data;
-            public Node next; // Changed to public
-
-            public Node(int _data)
-            {
-                data = _data;
-                next = null;
-            }
-        }
-
-
         private Node head;
         private int size;
         public LL()

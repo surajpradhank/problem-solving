@@ -25,10 +25,10 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine(E_ContainsDuplicate.ContainsDuplicate());
 
 #region Remove Duplicates
-//int[] nums = { 1, 1, 2,2 , 3, 4,4, 5, 6, 6, 7, 8, 8, 9 };
-int[] nums = { 5, 3, 8, 3, 1, 5, 7, 8, 2 };
-var result = RemoveDuplicates.RemoveDuplicatesFromArray(nums);
-Console.WriteLine(string.Join(",", result));
+////int[] nums = { 1, 1, 2,2 , 3, 4,4, 5, 6, 6, 7, 8, 8, 9 };
+//int[] nums = { 5, 3, 8, 3, 1, 5, 7, 8, 2 };
+//var result = RemoveDuplicates.RemoveDuplicatesFromArray(nums);
+//Console.WriteLine(string.Join(",", result));
 #endregion
 
 #region Maximum Product of Sub Array
@@ -84,6 +84,12 @@ Console.WriteLine(string.Join(",", result));
 //Console.WriteLine("Maximum Sub array = ", SlidingWindow.MaximumSumSubArray());
 #endregion
 
+
+#region Sub Array Equals Result
+
+//new M_SubArrayEqualsOut().SubArrayEqualsResult();
+
+#endregion
 #region string Problems
 
 #region Longest int without non repeating characters
@@ -93,20 +99,28 @@ Console.WriteLine(string.Join(",", result));
 #endregion
 
 #region String Compress
-M_CompressString m_CompressString = new M_CompressString();
-m_CompressString.CompressString();
+//M_CompressString m_CompressString = new M_CompressString();
+//m_CompressString.CompressString();
 
 #endregion
+
 #region Valid Palindrome
-E_ValidPalindrome e_ValidPalindrome = new E_ValidPalindrome();
-e_ValidPalindrome.ValidPalindrome();
+//E_ValidPalindrome e_ValidPalindrome = new E_ValidPalindrome();
+//e_ValidPalindrome.ValidPalindrome();
 #endregion
+
 #region Common Prefix
-E_LongestCommonPrefix e_LongestCommonPrefix = new E_LongestCommonPrefix();
-e_LongestCommonPrefix.LongestCommonPrefixString();
-Console.WriteLine("Output - "+e_LongestCommonPrefix.LongestCommonPrefixStringOption2());
+//E_LongestCommonPrefix e_LongestCommonPrefix = new E_LongestCommonPrefix();
+//e_LongestCommonPrefix.LongestCommonPrefixString();
+//Console.WriteLine("Output - "+e_LongestCommonPrefix.LongestCommonPrefixStringOption2());
+#endregion
+
+#region Remove all occurances in a string
+//RemoveAllOccurrencesInString removeAllOccurrences = new RemoveAllOccurrencesInString();
+//removeAllOccurrences.RemoveOccurrences();
 #endregion
 #endregion
+
 #region Algorithm
 /// <summary>
 /// Call Binary Search by uncommenting Iterative or Recursive 
@@ -165,12 +179,16 @@ Console.WriteLine("Output - "+e_LongestCommonPrefix.LongestCommonPrefixStringOpt
 #endregion
 
 #region Linked List
-//LL lL = new LL();
-//lL.AddFirst(10);
+LL lL = new LL();
+lL.AddLast(10);
+lL.AddLast(20);
+lL.AddLast(30);
 //lL.AddFirst(20);
 //lL.AddFirst(40);
-//lL.AddLast(70);
-//lL.PrintNode();
+lL.AddLast(70);
+
+lL.AddFirst(10);
+lL.PrintNode();
 
 //lL.GetSize();
 //lL.RemoveLast();
